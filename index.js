@@ -11,10 +11,10 @@ const image = document.querySelector("#image")
 const wishlist = document.querySelector('#wishlist')
     wishlist.addEventListener('click', e => {
    
-        wishlist.textContent = "★ Added to Wishlist"
+        wishlist.textContent = "♥"
 
         e.target.style.color = 'yellow';
-
+        e.target.reset
     })
     
 
