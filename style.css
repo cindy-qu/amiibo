@@ -1,7 +1,7 @@
 * { 
     background-color: white;
     /* background-color: rgb(140,232,255,255); */
-    color: red;
+    /* color: red; */
     font-family: "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; } h3 { font-family: "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; } p { font-family: "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } blockquote { font-family: "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; } pre { font-family: "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5714px; 
 
     }
@@ -26,7 +26,7 @@ h2 {
     margin-bottom: 10px;
     font-size: 15px;
     background-color: #1c1e1d;
-    padding: 0;
+    padding: 5px;
     float: left;
     clear: left;
 
@@ -40,6 +40,7 @@ h2 {
     padding: 5px;
     background-color: #1c1e1d;
     position: relative;
+    color: red;
     
 }
 
@@ -53,7 +54,9 @@ h2 {
 #image {
   width: 270px;
   height: auto;
-
+  margin-left: auto;
+  margin-right: auto;
+ 
 }
 
 
@@ -74,6 +77,7 @@ footer {
     margin-right: auto;
     margin-top: 6em;
     background: #1c1e1d;
+    font-size: 25px;
     /* width: 50%;
     text-align: center;
     display: table;
@@ -141,4 +145,52 @@ footer {
 
   #wishlist {
     font-size: 30px;
+  }
+
+
+  button{
+    cursor: pointer;
+    outline: 0;
+    color: #AAA;
+  
+  }
+  
+  .btn:focus {
+    outline: none;
+  }
+  
+  .green{
+    color: green;
+  }
+
+  .red{
+    color: red;
+  }
+
+
+
+  .content div {
+    /* position: absolute; */
+    bottom: 50%;
+    right: 10%;
+    left: 10%;
+    background: black;
+    color: white;
+    margin-bottom: 5px;
+    font-family: sans-serif;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: visibility 0s, opacity 0.5s linear; 
+    transition: visibility 0s, opacity 0.5s linear;
+  }
+
+  .content:hover {
+    cursor: pointer;
+  }
+
+  .content:hover div {
+    width: 150px;
+    padding: 8px 8px;
+    visibility: visible;
+    opacity: 0.7;
   }
