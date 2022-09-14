@@ -1,170 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" href= "style.css">
+    <link rel="stylesheet" href="style.css">
     <script defer src="index.js"></script>
     <script src="https://use.fontawesome.com/fe459689b4.js"></script>
-    <title>Document</title>
+    <title>Amiibo Database</title>
 </head>
+
 <body>
     <div class="body">
-    <div id="header">
-        <h1>Nintendo Amiibo</h1>
+        <div id="header">
+            <h1> <img id="logo" src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Amiibo_logo.png" alt="">
+                DATABASE
+            </h1>
+        </div>
+        <div class="names">
+
+            <h2>Amiibo Names</h2>
+            <div class="hovertext" id="namesList">
+            </div>
+
+        </div>
+
+
+        <div class="amiibo-details">
+
+            <div id="name">
+            </div>
+            <div class="content">
+                <img id="image"
+                    src="https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000000-00000002.png"
+                    alt="">
+                <div>Click Image for Details</div>
+            </div>
+
+
+            <div id="gameseries">
+                <!-- Game Series:  -->
+            </div>
+            <div id="releasedate">
+
+                <!-- North America Release Date: <br> -->
+            </div>
+            <div id="type">
+                <!-- Type:  -->
+            </div>
+            <br>
+            <button class="btn" id="green"><i class="fa fa-thumbs-up fa-lg" aria-hidden="true"></i></button>
+            <button class="btn" id="red"><i class="fa fa-thumbs-down fa-lg" aria-hidden="true"></i></button>
+            <br>
+
+        </div>
     </div>
-    <div class="names">
-        <h2>Amiibo Names</h2>
-
-        <div class="hovertext" id="namesList" data-hover="Click here for Amiibo details">
-            <!-- <span>Mario</span> -->
-            <!-- <span>Mario</span>
-            <span>Mario - Silver Edition</span>
-            <span>Mario - Cat</span>
-            <span>8-Bit Mario Classic Color</span> -->
-        </div>
-
-        
-    
-    </div>
-    
-
-
-
-    <div class="amiibo-details">
-       
-        <div id="name">
-            Name: Mario
-        </div>
-         <div class="content">
-        <img id="image" src="https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000000-00000002.png" alt="">
-        <div>Click Image for Details</div>
-        </div>
-
-            
-        <div id="gameseries">
-            <!-- Game Series: Super Mario -->
-        </div>
-        <div id="releasedate">
-             
-            <!-- N. America Release Date: 2014-11-21<br> -->
-        </div>
-        <div id="type">
-            <!-- Type: Figure -->
-        </div>
-        <br>
-
-        <button class="btn" id="green"><i class="fa fa-thumbs-up fa-lg" aria-hidden="true"></i></button>
-        <button class="btn" id="red"><i class="fa fa-thumbs-down fa-lg" aria-hidden="true"></i></button>
-        <!-- <div id="wishlist">
-            ♥
-        </div> -->
-        <br>
-        <!-- <div>
-            Name: Mario
-        </div>
-        <div>
-            <img src="https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000000-00340102.png" alt="">
-        </div>
-        <div>
-            Game Series: Super Mario
-        </div>
-        <div>
-            Release Date:  
-            "na": "2015-03-20" <br>
-        </div>
-        <div>
-            Type: Figure
-        </div>
-        <br>
-        <div>
-            Name: Mario - Gold Edition
-        </div>
-        <div>
-            <img src="https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000000-003c0102.png" alt="">
-        </div>
-        <div>
-            Game Series: Super Mario
-        </div>
-        <div>
-            Release Date:  
-            "na": "2015-03-20" <br>
-        </div>
-        <div>
-            Type: Figure
-        </div>
-
-        <br>
-        <div>
-            Name: Mario - Silver Edition
-        </div>
-        <div>
-            <img src="https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000000-003d0102.png" alt="">
-        </div>
-        <div>
-            Game Series: Super Mario
-        </div>
-        <div>
-            Release Date:  
-            "na": "2015-05-29" <br>
-        </div>
-        <div>
-            Type: Figure
-        </div>
-        
-        <br>
-        <div>
-            Name: Mario - Cat
-        </div>
-        <div>
-            <img src="https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000300-03a60102.png" alt="">
-        </div>
-        <div>
-            Game Series: Super Mario
-        </div>
-        <div>
-            Release Date:  
-            "na": "2021-02-12" <br>
-        </div>
-        <div>
-            Type: Figure
-        </div>
-         
-        <br>
-        <div>
-            Name: 8-Bit Mario Classic Color
-        </div>
-        <div>
-            <img src="https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000000-02380602.png" alt="">
-        </div>
-        <div>
-            Game Series: Super Mario
-        </div>
-        <div>
-            Release Date:  
-            "na": "2015-09-11" <br>
-        </div>
-        <div>
-            Type: Figure
-        </div>
-          -->
-
-<div>
-
-</div>
-    
-    
-    </div>
-</div>
-<footer>
-    <br>Contact Info:
-    <br> Website: <a href="https://www.nintendo.com/amiibo/">https://www.nintendo.com/amiibo/</a>
-    <br> Number: (888) 888-8888
-    <br> Email: nintendoamiibo@gmail.com
-
-</footer>
+    <footer>
+        <br>Contact Info:
+        <br> Website: https://www.nintendo.com/amiibo/
+        <br> Number: (888) 888-8888
+        <br> Email: nintendoamiibo@gmail.com
+    </footer>
 
 </body>
-</html>
 
+</html>

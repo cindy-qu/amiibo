@@ -1,196 +1,201 @@
+
+
 * { 
-    background-color: white;
-    /* background-color: rgb(140,232,255,255); */
-    /* color: red; */
-    font-family: "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; } h3 { font-family: "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; } p { font-family: "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } blockquote { font-family: "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; } pre { font-family: "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5714px; 
+  font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif; 
+  font-size: 24px; 
+  font-style: normal; 
+  font-variant: normal; 
+  font-weight: 700; 
+  line-height: 26.4px;
+  margin: 0%;
+} 
+  
+     
+         
 
-    }
 
-h1 {
-    color: red;
-    text-align: center;
+#header {
+  left : 0;
+  display: flex;
+  background: #484848;
+  width: 100%;
+  margin-top: 0;
+}
+
+h1{
+  display: flex;
+  color: white;
+  align-items: center;
+  font-size: 30px;
 }
 
 
 h2 {
-    color: red;
+  color: #e60012;
+  margin-top: 25px;
+  margin-bottom: 10px;
 }
 
 .body{
-    /* display: flex; */
-    height: 100%;
+  height: 100%;
 }
 #namesList span {
-    /* display: block ; */
-    color:red;
-    margin-bottom: 10px;
-    font-size: 15px;
-    background-color: #1c1e1d;
-    padding: 5px;
-    float: left;
-    clear: left;
+  color:#484848;
+  margin-bottom: 10px;
+  font-size: 15px;
+  padding: 5px;
+  float: left;
+  clear: left;
 
+}
+
+#hovercolor:hover {
+  color:red ;
 }
 
 
 .amiibo-details {
-    margin: auto;
-    width: 30%;
-    border: solid red;
-    padding: 5px;
-    background-color: #1c1e1d;
-    position: relative;
-    color: red;
-    
+  margin: auto;
+  width: 30%;
+  border: solid #484848;
+  padding: 5px;
+  position: relative;
+  color: #484848;
+  border-radius: 15px;
+  border-width: 2px;
+  
 }
 
 .amiibo-details * {
-    font-size: 15px;
-    background-color: #1c1e1d;
-    margin: auto;
-    width: 350px;
+  font-size: 15px;
+  margin: auto;
+  width: 350px;
 }
+
+
 
 #image {
-  width: 270px;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
- 
+width: 270px;
+height: auto;
+margin-left: auto;
+margin-right: auto;
 }
 
-
-#header {
-    padding: 60px;
-    text-align: center;
-    background: #1c1e1d;
-    color: white;
-    font-size: 30px;
-}
 
 footer {
-    color: red;
-    width: 50%;
-    text-align: center;
-    display: table;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 6em;
-    background: #1c1e1d;
-    font-size: 25px;
-    /* width: 50%;
-    text-align: center;
-    display: table;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 6em; */
+  color: white;
+  width: 100%;
+  text-align: center;
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8em;
+  font-size: 14px;
+  background-color: #484848;
+}
+
+footer *{
+  font-size: 14px;
+  display: flex;
+  width: 100%;
+}
+
+a{
+  font-size: 14px;
+  display: flex;
+  width: 100%;
 }
 
 
-/* div {
-    display:none;
-} */
-
-/* span:hover + div {
-    display: block;
+.hovertext {
+  position: absolute;
 }
- */
 
- .hovertext {
-    position: absolute;
-    border-bottom: 1px dotted black;
-  }
-  
-  .hovertext:before {
-    /* content: attr(data-hover);
-    visibility: hidden;
-    opacity: 0;
-    width: 140px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    border-radius: 5px;
-    padding: 5px 0;
-    transition: opacity 1s ease-in-out; */
-  
-    position: absolute;
-    z-index: 1;
-    left: 0;
-    top: 110%;
-  }
-  
-  .hovertext:hover:before {
-    opacity: 1;
-    visibility: visible;
-  }
- 
+.hovertext:before {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 110%;
+}
 
-  #namesList {
-    background-color: #1c1e1d;
-    width: 400px;
-    height: 650px;
-    overflow: auto;
-    /* position:relative;  */
-   
-    background-color: #1c1e1d;
-  }
+.hovertext:hover:before {
+  opacity: 1;
+  visibility: visible;
+}
 
 
-  #namesList{
-    margin-bottom: 15px;
-    cursor: pointer;
-
-  }
-
-
-  #wishlist {
-    font-size: 30px;
-  }
+#namesList {
+  width: 400px;
+  height: 650px;
+  overflow: auto;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
 
 
-  button{
-    cursor: pointer;
-    outline: 0;
-    color: #AAA;
-  
-  }
-  
-  .btn:focus {
-    outline: none;
-  }
-  
-  .green{
-    color: green;
-  }
+#wishlist {
+  font-size: 30px;
+}
 
-  .red{
-    color: red;
-  }
+
+button{
+  cursor: pointer;
+  outline: 0;
+  color: #AAA;
+  outline: #e60012;
+  width: 55px;
+  height: auto;
+
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.green{
+  color: #a4c70e;
+}
+
+.red{
+  color: #e60012;
+}
 
 
 
-  .content div {
-    /* position: absolute; */
-    bottom: 50%;
-    right: 10%;
-    left: 10%;
-    background: black;
-    color: white;
-    margin-bottom: 5px;
-    font-family: sans-serif;
-    opacity: 0;
-    visibility: hidden;
-    -webkit-transition: visibility 0s, opacity 0.5s linear; 
-    transition: visibility 0s, opacity 0.5s linear;
-  }
+.content div {
+  bottom: 50%;
+  right: 10%;
+  left: 10%;
+  background: black;
+  color: white;
+  margin-bottom: 5px;
+  font-family: sans-serif;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: visibility 0s, opacity 0.5s linear; 
+  transition: visibility 0s, opacity 0.5s linear;
+}
 
-  .content:hover {
-    cursor: pointer;
-  }
+.content:hover {
+  cursor: pointer;
+}
 
-  .content:hover div {
-    width: 150px;
-    padding: 8px 8px;
-    visibility: visible;
-    opacity: 0.7;
-  }
+.content:hover div {
+  width: 150px;
+  padding: 8px 8px;
+  visibility: visible;
+  opacity: 0.7;
+}
+
+#name {
+  font-size: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+#header * {
+  width: 270px;
+  height: auto;
+}
