@@ -124,7 +124,7 @@ footer {
   display: table;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 8em;
+  margin-top: 15em;
   font-size: 14px;
   background-color: #484848;
 }
@@ -146,7 +146,7 @@ button{
 }
 
 #buttoncss{
-  margin-left: 200px;
+  margin-left: 220px;
 }
 
 .btn:focus {
@@ -188,4 +188,3 @@ button{
   visibility: visible;
   opacity: 0.7;
 }
-

@@ -7,6 +7,7 @@ const amiiboReleaseDate= document.querySelector('#releasedate')
 const amiiboType= document.querySelector('#type')
 const image = document.querySelector("#image")
 
+
 //Thumsup and Thumbsdown Button
 const btn1 = document.querySelector('#green');
 const btn2 = document.querySelector('#red');
