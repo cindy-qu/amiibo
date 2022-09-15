@@ -8,7 +8,7 @@ const amiiboType= document.querySelector('#type')
 const image = document.querySelector("#image")
 
 
-//Thumsup and Thumbsdown Button
+//Thumbsup and Thumbsdown Button
 const btn1 = document.querySelector('#green');
 const btn2 = document.querySelector('#red');
 
@@ -29,11 +29,11 @@ btn2.addEventListener('click', function() {
   
 
 //Fetch request
-fetch('http://localhost:3000/amiibo')
+fetch('https://amiiboapi.com/api/amiibo/')
 .then(res => res.json())
 .then(character => {
-    renderAmiibo(character);
-    renderMario(character[0])
+    renderAmiibo(character.amiibo);
+    renderMario(character.amiibo[0])
 })
 
 //Function to set default image to the first character on the database list
